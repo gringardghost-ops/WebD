@@ -1,0 +1,112 @@
+html {
+  background-image: linear-gradient(
+    30deg,
+    teal,
+    rgb(140, 218, 107),
+    aquamarine
+  );
+}
+#a {
+  height: 500px;
+  width: 500px;
+  background-color: rgb(43, 163, 133);
+}
+#b {
+  height: 80%;
+  width: 80%;
+  background-color: rgb(42, 143, 138);
+}
+#c {
+  height: 80%;
+  width: 80%;
+  background-color: teal;
+}
+#d {
+  height: 80%;
+  width: 80%;
+  background-color: rgb(57, 171, 171);
+}
+#e {
+  height: 80%;
+  width: 80%;
+  background-color: rgb(29, 157, 179);
+}
+#d1 {
+  height: 500px;
+  width: 500px;
+  border-radius: 20%;
+  background-color: chartreuse;
+  transition: 2s;
+}
+#d1:hover {
+  border-radius: 50%;
+}
+#d2 {
+  height: 80%;
+  width: 80%;
+  border-radius: 20%;
+  background-color: cyan;
+  transition: 2.2s;
+}
+#d2:hover {
+  border-radius: 50%;
+}
+#d3 {
+  height: 80%;
+  width: 80%;
+  border-radius: 20%;
+  background-color: rgb(23, 226, 172);
+  transition: 2.3s;
+}
+#d3:hover {
+  border-radius: 50%;
+}
+#box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(6, 178, 241);
+  transition: 2s;
+  border: 3px solid rgb(79, 141, 101);
+}
+#box:hover {
+  background-color: aquamarine;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    30deg,
+    teal,
+    rgb(140, 218, 107),
+    aquamarine
+  );
+}
+#a1 {
+  height: 150px;
+  width: 350px;
+  background-color: rgb(52, 161, 161);
+}
+#b1 {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(70, 158, 89);
+  transition: 2s;
+}
+#b2 {
+  height: 35px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: rgb(73, 222, 113);
+}
+#b3 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(62, 147, 89);
+}
+#b4 {
+  height: 30px;
+  width: 60px;
+  border-radius: 0%;
+  background-color: rgb(64, 171, 133);
+}
+#b1:hover {
+  background-color: rgb(132, 62, 130);
+}

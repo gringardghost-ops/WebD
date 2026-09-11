@@ -1,0 +1,27 @@
+#q{
+    color: rgb(162, 103, 216);
+}
+
+.y{
+    color: rgba(108, 154, 78, 0.777);
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    /* border-radius: 10%; */
+
+}
+#child{
+
+    border-radius: 8%;
+    /* padding: 20vh; */
+    height: 50%;
+    width: 50%;
+    background-color: rgb(243, 242, 245);
+}
+
+
+html{
+    font-size: large;
+}

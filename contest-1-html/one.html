@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* #one {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      } */
+      /* #one:hover{
+            background-color: aqua;
+            left: 200px;
+        } */
+      .parent {
+        position: relative;
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+      }
+
+      .child {
+        position: static;
+        top: 20px;
+        left: 30px;
+        background-color: blueviolet;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="one"></div> -->
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
