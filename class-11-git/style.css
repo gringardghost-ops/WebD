@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+}
+#card1{
+    background-color: aquamarine;
+    height: 275px;
+    width: 200px;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5%;
+}
+#card2{
+    background-color: white;
+    height: 275px;
+    width: 200px;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5%;
+}
+#card3{
+    background-color: aquamarine;
+    height: 275px;
+    width: 200px;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5%;
+}
+img{
+    height: 120px;
+    width: 180px;
+    position: relative;
+    top: 12px;
+    border-radius: 5%;
+} 

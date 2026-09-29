@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+}
+#navbar {
+  background-color: black;
+  color: antiquewhite;
+  position: sticky;
+  top: 0px;
+  z-index: 15;
+  display: inline-block;
+  width: 100vw;
+}
+#navbar a{
+  padding: 20px;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+#navbar h3 {
+  display: inline-block;
+}
+#photo {
+  display: inline-block;
+  height: 275px;
+  width: 375px;
+  position: relative;
+  left: 30vw;
+}
+#cardtext {
+  position: relative;
+  left: 30vw;
+  display: inline-block;
+}
+#b1 {
+  position: relative;
+  left: 30vw;
+}
+#FS {
+  background-color: red;
+  color: aliceblue;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5%;
+  position: relative;
+  left: 31vw;
+  top: 5vh;
+  z-index: 12;
+}
