@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>F1Race</title>
+    <style>
+        #main{
+            border: 2px solid black;
+        }
+        #main:hover .one{
+            margin-left: 1350px;
+            border-radius: 50%;
+        }
+        .one{
+            height: 100px;
+            width: 100px;
+            transition: 3s;
+            transition-delay: 2s;
+        }
+        #one{
+            background-color: aqua;
+            transition-timing-function: linear;
+        }
+        #two{
+            background-color: chartreuse;
+            transition-timing-function: ease-in;
+        }
+        #three{
+            background-color: darkviolet;
+            transition-timing-function: ease-out;
+        }
+        #four{
+            background-color: gold;
+            transition-timing-function: ease-in-out;
+        }
+        #five{
+            background-color: red;
+            transition-timing-function: step-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="one" class="one"></div>
+        <div id="two" class="one"></div>
+        <div id="three" class="one"></div>
+        <div id="four" class="one"></div>
+        <div id="five" class="one"></div>
+    </div>
+</body>
+</html>
