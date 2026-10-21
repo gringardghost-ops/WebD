@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .carousle{
+            width: 90%;
+            margin: 100px auto;
+            border: 2px solid;
+            display: flex;
+            overflow: hidden;
+        }
+    
+        .track{
+            display: flex;
+            animation: scrol 12s linear infinite ;
+            width: max-content;
+        }
+        .grp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            flex-shrink: 0;
+
+        }
+        .child{
+            width: 40px;
+            height: 30vh;
+            padding: 2vh;
+            background-color: aqua;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        @keyframes scrol {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="carousle">
+        <div class="track">
+            <div class="grp"></div>
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+            </div>
+        
+
+            <div class="grp">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            margin: 0px;
+            /* padding: 0px; */
+        }
+        #p{
+            display: grid;
+            grid-template-columns: repeat(3, 410px);
+            grid-template-rows: repeat(5, 200px);
+            border: 1px solid pink;
+            gap: 20px;
+        }
+        .ac{
+            border: 1px solid pink;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+        #css{
+            color: aliceblue;
+            /* text-align: center; */
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #linear-normal{
+            background: linear-gradient(red, blue);
+        }
+        #linear-right{
+            background: linear-gradient(to right, red, blue);
+        }
+        #linear-left{
+            background: linear-gradient(to left, red, blue);
+        }
+        #linear-top{
+            background: linear-gradient(to top, red, blue);
+        }
+        #linear-diagonal{
+            background: linear-gradient(-45deg, red, blue);
+        }
+        #deg45{
+            background: linear-gradient(45deg, red, blue);
+        }
+        #multiple-color{
+            background: linear-gradient(
+                to right,
+                red,
+                yellow,
+                orange,
+                pink,
+                blue,
+                blueviolet
+            );
+        }
+        #color-stop{
+            background: linear-gradient(to right, red 20%,blue 40%, blueviolet 60%, skyblue 80%);
+        }
+        #hard-stop{
+            background: linear-gradient(to right, red 50%, blue 50%);
+        }
+        #radial{
+            background: radial-gradient(red , blue);
+        }
+        #radial-circle{
+            background: radial-gradient(circle, red, blue);
+        }
+        #radial-multiple-color{
+            background: radial-gradient(
+                circle,
+                red,
+                orange,
+                yellow,
+                blue
+            );
+        }
+
+    </style>
+</head>
+<body>
+    <div id="css"><h2>CSS Gradients</h2></div>
+    <div id="p">
+        <div class="ac" id="linear-normal"> <h2>Linear normal</h2></div>
+        <div class="ac" id="linear-right"> <h2>Linear right</h2></div>
+        <div class="ac" id="linear-left"> <h2>Linear left</h2></div>
+        <div class="ac" id="linear-top"> <h2>Linear top</h2></div>
+        <div class="ac" id="linear-diagonal"> <h2>Linear diagonal</h2></div>
+        <div class="ac" id="deg45"> <h2> 45Deg</h2></div>
+        <div class="ac" id="multiple-color"> <h2>multiple color</h2></div>
+        <div class="ac" id="color-stop"> <h3>Color Stop</h3></div>
+        <div class="ac" id="hard-stop"> <h2>hard stop</h2></div>
+        <div class="ac" id="radial"> <h2>Radial</h2></div>
+        <div class="ac" id="radial-circle"> <h2>Radial circle</h2></div>
+        <div class="ac" id="radial-multiple-color"> <h2>Radial multiple color</h2></div>
+        <div class="ac" id="radial-postions"> <h2>Radial radial-postions</h2></div>
+        <div class="ac"></div>
+        <div class="ac"></div>
+    </div>
+</body>
+</html>

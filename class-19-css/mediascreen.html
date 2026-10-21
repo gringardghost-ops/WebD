@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            height: 85px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: bisque;
+            
+        }
+        div a{
+            text-decoration: none;
+            color: bisque;
+        }
+        #left{
+            display: flex;
+            gap:10px;
+        }
+        #right{
+            display: flex;
+            gap:10px;
+        }
+       @media (max-width: 500px){
+        #navbar{
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: bisque;
+            
+        }
+        #left{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #right{
+            display: flex;
+            flex-direction: column;
+        }
+        #mid h2{
+            font-size: 20px;
+        }
+       }
+    </style>    
+</head>
+<body>
+    <div id="navbar">
+        <div id="left">
+            <a href="#"><h3>hello</h3></a>
+            <a href="#"><h3>hello</h3></a>
+        </div>
+        <div id="mid"><h2>Media Screen</h2></div>
+        <div id="right">
+            <a href="#"><h3>hello</h3></a>
+            <a href="#"><h3>hello</h3></a>
+        </div>
+    </div>
+</body>
+</html>

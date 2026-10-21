@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <style>
+        img {
+            height: 270px;
+            width: 470px;
+            margin: 3px;
+            border: 1px solid black;
+            transition: 0.5s;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+
+        div {
+            margin: 3px;
+        }
+
+        #main {
+            display: grid;
+            gap: 10px;
+
+            height: 80vh;
+            grid-template-columns: repeat(3, 470px);
+        }
+
+        img:hover {
+            transform: scale(1.03);
+            opacity: 1;
+            border: 1px solid whitesmoke;
+            border-radius: 0;
+            margin: 4px;
+            border-radius: 10px;
+
+        }
+
+        hr {
+            height: 5px;
+            background-color: rgb(76, 174, 236);
+            border: none;
+
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding-left: 10px;
+        }
+
+        p {
+            color: darkgray;
+            padding-left: 10px;
+        }
+
+        #first {
+            grid-column: span 3;
+            grid-row: span 1;
+            position: relative;
+        }
+
+        #first img {
+            object-fit: cover;
+            height: 440px;
+            width: 97vw;
+            overflow: hidden;
+        }
+
+        #first span {
+            position: absolute;
+            color: white;
+            left: 30px;
+            bottom: 70px;
+            font-size: 40px;
+            opacity: 0;
+        }
+
+        #first:hover span {
+            z-index: 10;
+            opacity: 1;
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <p>MY COLLECTION</p>
+    <h1>Moments.</h1>
+    <p>A collection of places, people and memories.</p>
+    <div id="main">
+        <div class="one" id="first">
+            <span>Into the wild</span>
+            <img src="https://images.pexels.com/photos/695210/pexels-photo-695210.jpeg?cs=srgb&dl=pexels-joel-rocha-218735-695210.jpg&fm=jpg"
+                alt="">
+
+        </div>
+        <div class="one" id="">
+            <span>Into the wild</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QT0mbplTzXbibXoXreBlhH6UshptZEs_AwYgBCKz_LnGJZNhH-Gp3eI&s=10"
+                alt="">
+
+        </div>
+        <div class="one" id="">
+            <span>Into the wild</span>
+
+            <img src="https://media-gadventures.global.ssl.fastly.net/media-server/dynamic/blogs/posts/daniels/2015/04/4-scottish_highlands_matt_tilghman_final.jpg"
+                alt="">
+
+        </div>
+        <div class="one" id="">
+            <span>Into the wild</span>
+
+            <img src="https://a.storyblok.com/f/250263/1440x906/cd209d94c2/milford-sound-4681cd75-82cb-40d3-89bd-718b88f6a2eb.jpg"
+                alt="">
+
+        </div>
+        <div class="one" id="five">
+            <span>Into the wild</span>
+
+            <img src="https://i.cdn.newsbytesapp.com/images/l43920251112140531.jpeg" alt="">
+        </div>
+        <div class="one" id="five">
+            <span>Into the wild</span>
+
+            <img src="https://media.istockphoto.com/id/607280514/photo/lupins-of-lake-tekapo.jpg?s=612x612&w=0&k=20&c=TLqHmSwcHKT1wR6U7H1KCJMmIq3SrgqHNOEyvziSCSg="
+                alt="">
+        </div>
+        <div class="one" id="five">
+            <span>Into the wild</span>
+
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/071/529/353/small/mountain-reflection-on-calm-lake-surrounded-by-autumn-trees-landscape-free-photo.jpg"
+                alt="">
+        </div>
+
+
+    </div>
+</body>
+
+</html>

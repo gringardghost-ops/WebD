@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 500px;
+            width: 100vw;
+            display: flex;
+            background-color: aqua;
+            justify-content: center;
+        }
+        #child{
+            border: 1px solid black;
+            width: 350px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            overflow: hidden;
+            overflow: scroll;
+        }
+        #pfp{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: hotpink;
+            z-index: 2;
+            flex-shrink: 0;
+        }
+        #text{
+            padding: 10px;
+            text-align: center;
+        }
+        #child:hover{
+            transform: scale(1.01);
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="pfp"></div>
+            <br>
+            <div id="text">
+                <h3>John Doe</h3>
+                <p><em>Web Devloper</em></p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptas
+                    exercitationem labore facere. Deleniti saepe corporis nemo quasi numquam harum.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(rgb(255, 47, 47),rgb(243, 186, 80),rgb(251, 0, 255));
+            border-radius: 50%;
+            border: 5px solid slateblue;
+            animation-name: vow;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            
+        }
+        @keyframes vow {
+            0%{
+                transform: translateY(700px);
+            }
+            100%{
+                transform: translateY(0px) rotate(720deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div></div>
+    </center>
+</body>
+</html>
