@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [1,2,3,4,5,6];
+        // for(let i in arr){
+        //     console.log(i);
+            
+        // }
+        // for(let i of arr){
+        //     if(i%2==0){
+        //         console.log(i ,"is Even");
+        //     }
+        //     else{
+        //         console.log(i,"is Odd");
+        //     }
+        // }
+        // let obj={
+        //     name:"yatan",
+        //     ghar:"mumbai",
+        //     age:200
+        // }
+        // console.log(obj.name , obj.ghar, obj.age);
+        // let arr = [1,2,3,4,[5,6,7]];
+        // console.log(arr[4][2]);
+        // for(let i=1; i<=4; i++){
+        //     star=""
+        //     space=" "
+        //     for (let j=1; j<=i; j++){
+        //         star=star+"*"
+        //     }
+        //     for(let k=4; k>=1;k--){
+        //         console.log("\t");
+        //     }
+        //     console.log(star);
+        // }
+        let n = 4;
+        let nsp = n - 1;
+        let nst = 1;
+
+        for (let i = 1; i <= n; i++) {
+            let str = "";
+            for (let j = 1; j <= nsp; j++) {
+                str += " ";
+            }
+            for (let j = 1; j <= nst; j++) {
+                str += "*";
+            }
+            console.log(str);
+            nsp--;
+            nst++;
+      }
+    </script>
+</body>
+</html>

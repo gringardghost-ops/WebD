@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            height:60%;
+            width: 25%;
+            background-color: bisque;
+            /* overflow: hidden; */
+        }
+        .tiles{
+            height: 18%;
+            width: 100%;
+            padding: 10px;
+            background-color: aqua;
+            border: 1px solid white;
+            font-size: 32px;
+        }
+        .tiles:hover{
+            background-color: antiquewhite;
+            border-left: 8px solid pink;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="box">
+            <div class="tiles"><p>🤖 Book a test drive</p></div>
+            <div class="tiles"><p>🤖 Book a test drive</p></div>
+            <div class="tiles"><p>🤖 Book a test drive</p></div>
+            <div class="tiles"><p>🤖 Book a test drive</p></div>
+            <div class="tiles"><p>🤖 Book a test drive</p></div>
+        </div>
+    </div>
+</body>
+</html>
