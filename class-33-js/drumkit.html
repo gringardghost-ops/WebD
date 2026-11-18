@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .set{
+            display: flex;
+            justify-content: space-around;
+        }
+        button{
+            height: 75px;
+            width: 75px;
+
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> drum kit</h1>
+    <br>
+    <div class="set">
+        <button class="drums">w</button>
+        <button class="drums" >a</button>
+        <button class="drums" >s</button>
+        <button class="drums" >d</button>
+        <button class="drums" >j</button>
+        <button class="drums" >k</button>
+        <button class="drums" >l</button>
+    </div>
+    <audio id="w" src="./untitled folder/freesound_community-midtom-95156.mp3"></audio>
+    <audio id="a" src="./untitled folder/soundreality-cymbals-crash-acoustic-sample-455290.mp3"></audio>
+    <audio id="s" src="./untitled folder/soundreality-hi-hat-closed-acoustic-sample-455286.mp3"></audio>
+    <audio id="d" src="./untitled folder/soundreality-hi-hat-open-acoustic-sample-455284.mp3"></audio>
+    <audi id="j" src="./untitled folder/soundreality-kick-drum-acoustic-sample-455285.mp3"></audio>
+    <audio id="k" src="./untitled folder/soundreality-snare-drum-acoustic-sample-455287.mp3"></audio>
+    <audio id="l" src="./untitled folder/soundreality-hi-hat-open-acoustic-sample-455284.mp3"></audio>
+
+    <script>
+        let buttons = document.querySelectorAll(".drums")
+        for(let i=0; i<buttons.length; i++){
+            buttons[i].addEventListener('click', function(){
+                let buttonname = buttons[i].innerHTML.toLowerCase();
+                let audio = document.querySelector("#"+buttonname);
+                audio.play();
+            })
+        }
+    </script>
+</body>
+</html>
