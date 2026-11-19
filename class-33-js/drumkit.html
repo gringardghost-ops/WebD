@@ -39,19 +39,30 @@
     <audio id="a" src="./untitled folder/soundreality-cymbals-crash-acoustic-sample-455290.mp3"></audio>
     <audio id="s" src="./untitled folder/soundreality-hi-hat-closed-acoustic-sample-455286.mp3"></audio>
     <audio id="d" src="./untitled folder/soundreality-hi-hat-open-acoustic-sample-455284.mp3"></audio>
-    <audi id="j" src="./untitled folder/soundreality-kick-drum-acoustic-sample-455285.mp3"></audio>
+    <audio id="j" src="./untitled folder/soundreality-kick-drum-acoustic-sample-455285.mp3"></audio>
     <audio id="k" src="./untitled folder/soundreality-snare-drum-acoustic-sample-455287.mp3"></audio>
     <audio id="l" src="./untitled folder/soundreality-hi-hat-open-acoustic-sample-455284.mp3"></audio>
 
     <script>
-        let buttons = document.querySelectorAll(".drums")
-        for(let i=0; i<buttons.length; i++){
-            buttons[i].addEventListener('click', function(){
-                let buttonname = buttons[i].innerHTML.toLowerCase();
-                let audio = document.querySelector("#"+buttonname);
-                audio.play();
-            })
+        const buttons = document.querySelectorAll(".drums");
+
+        function playSound(key) {
+            const audio = document.querySelector(`#${key}`);
+            if (!audio) return;
+
+            audio.currentTime = 0;
+            audio.play();
         }
+
+        document.addEventListener("keydown", function(event) {
+            playSound(event.key.toLowerCase());
+        });
+
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                playSound(button.textContent.trim().toLowerCase());
+            });
+        });
     </script>
 </body>
 </html>
